@@ -132,7 +132,7 @@ const Herosection = () => {
                 </p>
               </div>
               <a
-                href="https://forms.gle/gRPEzxmbL9febVuMA"
+                href="https://forms.gle/euosQkdUW45P8mYc9"
                 target="_blank"
                 className="bg-primary cursor-pointer py-3 text-white text-center   rounded-[5px] font-medium w-full sm:w-48"
               >

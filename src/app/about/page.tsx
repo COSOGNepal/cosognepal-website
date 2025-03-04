@@ -23,14 +23,14 @@ export default async function AboutPage() {
             <Descriptor
               title="Who we are?"
               descriptions={[
-                `Cosog Nepal, also known as Coding for Social Good, is a student-driven non-profit organization founded in May 2022. Based in Kathmandu, Nepal, we are dedicated to revolutionizing computer science education throughout the country. Our primary focus is enabling students to initiate and manage Computer Science clubs in secondary and high schools across remote areas, creating a vibrant community of young tech enthusiasts.`,
-                "Our work extends beyond education; we are deeply involved in charitable coding initiatives, contributing to Nepal's digitalization. As a bridge between traditional values and modern technology, we are uniquely positioned to foster a blend of learning and innovation for social good, placing us at the forefront of Nepal's technological advancement and educational transformation.",
+                `Cosog Nepal, also known as Coding for Social Good, is a student-driven non-profit organization founded in May 2022. Based in Nepal, we are dedicated to spreading computer science education throughout the country. Our primary focus is enabling students to initiate and manage Computer Science clubs in secondary and high schools across Nepal, creating a vibrant community of young tech enthusiasts.`,
+                "Our work extends beyond education. We are involved in charitable coding initiatives. As a bridge between traditional values and modern technology, we are uniquely positioned to foster a blend of learning and innovation for social good, placing us at the forefront of Nepal's technological advancement and educational transformation.",
               ]}
             />
             <Descriptor
               title="Our story"
               descriptions={[
-                "Cosog Nepal's journey was rooted in a transformative observation by Bibek, our president, during his tenure as a STEM instructor. The recent expansion of the Nepalese high school system from 11th-12th to 9th-12th grades opened new doors for younger students, yet many remained unaware of these burgeoning opportunities, especially in technology. Bibek identified a critical void in high schools: the absence of a Computer Science club culture from grade 9 onwards. This gap deprived students of valuable experiences like engaging with cutting-edge technologies, participating in hackathons, and competing in Olympiads – opportunities essential for cultivating tech-savvy and competitive individuals.",
+                "Cosog Nepal's journey was rooted in a transformative observation by Bibek, our past president, during his tenure as a STEM instructor. The recent expansion of the Nepalese high school system from 11th-12th to 9th-12th grades opened new doors for younger students, yet many remained unaware of these burgeoning opportunities, especially in technology. Bibek identified a critical void in high schools: the absence of a Computer Science club culture from grade 9 onwards. This gap deprived students of valuable experiences like engaging with cutting-edge technologies, participating in hackathons, and competing in Olympiads – opportunities essential for cultivating tech-savvy and competitive individuals.",
                 "Recognizing the need to fill this gap, Bibek, alongside Aashish and five high school graduates, founded Cosog Nepal. Their vision was to establish a culture of technology exploration and innovation in high schools, starting from the 9th grade opening doors to skill refinement, competitive participation, and overall personal and professional growth in the digital age.",
               ]}
             />
@@ -48,9 +48,8 @@ export default async function AboutPage() {
                 "At Cosog Nepal, we've made significant strides in advancing computer science education and supporting Nepal's digital transformation:",
               ]}
               list={[
-                "Raising Awareness in Schools: We've conducted informative presentations in over 30 schools across Nepal. These sessions have been instrumental in enlightening high school students about the value of computer science education and the importance of initiating CS clubs.",
-                "Software Fellowship Program: We organized a comprehensive five-day fellowship focusing on Python programming. This program has equipped students with foundational programming skills, enabling them to write their first programs.",
-                "Open-Source Awareness: Our initiative to promote open-source contributions has inspired over 100 individuals. This program encourages active participation in open-source projects, fostering a collaborative and innovative coding community.",
+                "Raising Awareness in Schools: We've conducted informative presentations in over 30 schools across Nepal. These sessions have been instrumental in enlightening high school students about the value of computer science education and the career paths it offers.",
+                "Career Counseling Sessions: We organized a career counseling session for high school students, providing them with insights into the diverse career opportunities available in the tech industry, opportunities in Nepal and abroad in CS. This event was attended by over 200 students.",
                 "Charitable Coding Initiatives: We are currently engaged in charitable coding projects. These initiatives are crucial in driving forward Nepal's digitalization, demonstrating our commitment to using technology for societal advancement.",
               ]}
             />
@@ -78,7 +77,7 @@ export default async function AboutPage() {
         }
         cta={{
           text: "Join Now",
-          link: " https://forms.gle/euosQkdUW45P8mYc9",
+          link: "https://forms.gle/euosQkdUW45P8mYc9",
         }}
       />
     </>

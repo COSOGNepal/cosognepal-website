@@ -15,22 +15,22 @@ import SudeshAcharya from "@/assets/images/Members/Sudesh_Acharya.png";
 
 const members = [
   {
-    name: "Bibek Bhandari",
-    email: "bhandareebivek@gmail.com",
-    fb_link: "https://www.facebook.com/aashishpanthi11",
-    insta_link: "https://www.instagram.com/vandari_7/",
-    linkedin_link: "https://www.linkedin.com/in/bibekbha/",
-    image: BibekBhandari,
-    post: "President",
-  },
-  {
     name: "Aashish Panthi",
     email: "aashishpanthi11@gmail.com",
     fb_link: "https://www.facebook.com/aashishpanthi11",
     insta_link: "https://www.instagram.com/aashishpanthi11/",
     linkedin_link: "https://www.linkedin.com/in/aashishpanthi/",
     image: AashishPanthi,
-    post: "Vice President",
+    post: "President",
+  },
+  {
+    name: "Bibek Bhandari",
+    email: "bhandareebivek@gmail.com",
+    fb_link: "https://www.facebook.com/aashishpanthi11",
+    insta_link: "https://www.instagram.com/vandari_7/",
+    linkedin_link: "https://www.linkedin.com/in/bibekbha/",
+    image: BibekBhandari,
+    post: "Director",
   },
   {
     name: "Sushil Bhattarai",
