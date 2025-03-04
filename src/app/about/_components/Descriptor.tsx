@@ -15,15 +15,13 @@ export default function Descriptor({
           return <div key={index}> {description}</div>;
         })}
         <ul className="list_con mt-small list-disc">
-          {list?.map((li, index) => {
-            return (
-              <li key={index + li}>
-                {li.split(":").map((chunk, index) => {
-                  return index == 0 ? <b>{chunk} : </b> : chunk;
-                })}
-              </li>
-            );
-          })}
+          {list?.map((li, index) => (
+            <li key={index + li}>
+              {li.split(":").map((chunk, index) => {
+                return index == 0 ? <b>{chunk} : </b> : chunk;
+              })}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

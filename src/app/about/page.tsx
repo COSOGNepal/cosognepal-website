@@ -23,7 +23,7 @@ export default async function AboutPage() {
             <Descriptor
               title="Who we are?"
               descriptions={[
-                `Cosog Nepal, also known as Coding for Social Good, is a student-driven non-profit organization founded in May 2022. Based in Nepal, we are dedicated to spreading computer science education throughout the country. Our primary focus is enabling students to initiate and manage Computer Science clubs in secondary and high schools across Nepal, creating a vibrant community of young tech enthusiasts.`,
+                `Cosog Nepal, also known as Coding for Social Good, is a student-driven non-for-profit organization founded in May 2022. Based in Nepal, we are dedicated to spreading computer science education throughout the country. Our primary focus is enabling students to initiate and manage Computer Science clubs in secondary and high schools across Nepal, creating a vibrant community of young tech enthusiasts.`,
                 "Our work extends beyond education. We are involved in charitable coding initiatives. As a bridge between traditional values and modern technology, we are uniquely positioned to foster a blend of learning and innovation for social good, placing us at the forefront of Nepal's technological advancement and educational transformation.",
               ]}
             />
@@ -56,7 +56,7 @@ export default async function AboutPage() {
           </div>
         </div>
         <div className="board_members space-y-block " id="team">
-          <SectionTitle title="Board Members" />
+          <SectionTitle title="Our team" />
           <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
             {members.map((member, index) => {
               if (member.post != "Community Leader")

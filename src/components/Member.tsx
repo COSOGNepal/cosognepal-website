@@ -25,7 +25,7 @@ export default function Member({ data }: { data: Tmember }) {
           </div>
         </div>
         <div className="socials flex space-x-small mt-[200%] opacity-0 group-hover:mt-small group-hover:opacity-100 transition-all duration-300 ease-in-out">
-          {fb_link ? (
+          {fb_link && fb_link != "#" ? (
             <a href={fb_link} target="blank" className="cursor-pointer">
               <Image
                 src={FacebookLogo}
@@ -38,7 +38,7 @@ export default function Member({ data }: { data: Tmember }) {
           ) : (
             ""
           )}
-          {insta_link ? (
+          {insta_link && insta_link != "#" ? (
             <a href={insta_link} target="blank">
               <Image
                 src={InstagramLogo}
