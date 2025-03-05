@@ -57,11 +57,22 @@ export default async function AboutPage() {
         </div>
 
         <div className="board_members space-y-block " id="team">
-          <SectionTitle title="Advisory Board" />
+          <SectionTitle title="Core Members" />
           <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
             {members.map((member, index) => {
-              if (member.post === "Chairperson" || member.post === "Advisor")
-                return <Member key={index + member.name} data={member} />;
+              if (
+                member.post === "Chairperson" ||
+                member.post === "President"
+              ) {
+                const post = "Founder/" + member.post;
+
+                return (
+                  <Member
+                    key={index + member.name}
+                    data={{ ...member, post }}
+                  />
+                );
+              }
             })}
           </div>
         </div>
@@ -70,7 +81,7 @@ export default async function AboutPage() {
           <SectionTitle title="Our team members" />
           <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
             {members.map((member, index) => {
-              if (member.post != "Chairperson" && member.post != "Advisor")
+              if (member.post != "Chairperson")
                 return <Member key={index + member.name} data={member} />;
             })}
           </div>

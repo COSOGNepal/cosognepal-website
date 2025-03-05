@@ -13,17 +13,5 @@ export type Tmember = {
   insta_link?: string;
   linkedin_link?: string;
   image: StaticImageData;
-  post:
-    | "President"
-    | "Vice President"
-    | "Chairperson"
-    | "Advisor"
-    | "Secretary"
-    | "Treasurer"
-    | "IT Head"
-    | "Program Manager"
-    | "Community Outreach Officer"
-    | "Community Leader"
-    | "Executive Member"
-    | "Outreach Coordinator";
+  post: string;
 };

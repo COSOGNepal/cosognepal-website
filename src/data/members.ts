@@ -1,4 +1,4 @@
-import BibekBhandari from "@/assets/images/Members/Bibek_Bhandari.png";
+import BibekBhandari from "@/assets/images/Members/Bibek_Bhandari.jpeg";
 import AashishPanthi from "@/assets/images/Members/Aashish_Panthi.jpeg";
 import SushilBhattarai from "@/assets/images/Members/Sushil_Bhattarai.png";
 import SanskarLamsal from "@/assets/images/Members/Sanskar_Lamsal.jpg";
@@ -15,15 +15,6 @@ import SudeshAcharya from "@/assets/images/Members/Sudesh_Acharya.png";
 
 const members = [
   {
-    name: "Aashish Panthi",
-    email: "aashishpanthi11@gmail.com",
-    fb_link: "https://www.facebook.com/aashishpanthi11",
-    insta_link: "",
-    linkedin_link: "https://www.linkedin.com/in/aashishpanthi/",
-    image: AashishPanthi,
-    post: "President",
-  },
-  {
     name: "Bibek Bhandari",
     email: "bhandareebivek@gmail.com",
     fb_link: "",
@@ -31,6 +22,15 @@ const members = [
     linkedin_link: "https://www.linkedin.com/in/bibekbha/",
     image: BibekBhandari,
     post: "Chairperson",
+  },
+  {
+    name: "Aashish Panthi",
+    email: "aashishpanthi11@gmail.com",
+    fb_link: "https://www.facebook.com/aashishpanthi11",
+    insta_link: "",
+    linkedin_link: "https://www.linkedin.com/in/aashishpanthi/",
+    image: AashishPanthi,
+    post: "President",
   },
   {
     name: "Sushil Bhattarai",
