@@ -8,7 +8,7 @@ import Banner from "@/assets/images/Programs/Code_for_charity_banner.png";
 export default async function CodeForCharityPage() {
   return (
     <>
-      <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block  max-w-[1400px] m-auto">
+      <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block max-w-[1400px] m-auto">
         <div className="aboutSection w-full">
           <Image
             src={Banner}
@@ -18,7 +18,8 @@ export default async function CodeForCharityPage() {
             className="banner max-h-[400px] h-auto object-cover m-auto"
           />
         </div>
-        <div className="space-y-10 " id="team">
+
+        <div className="space-y-10" id="program">
           <Descriptor
             title="What is code for charity?"
             descriptions={[
@@ -42,6 +43,59 @@ export default async function CodeForCharityPage() {
               "You'll also get a chance to learn from professionals, get your code reviewed, network with other developers, and add this experience to your resume. We'll provide you with the support, resources, and a letter of recommendation to help you succeed in your career.",
             ]}
           />
+        </div>
+
+        <div className="space-y-8">
+          <h2 className="title font-bold text-para md:text-title text-black-dark">
+            Testimonials
+          </h2>
+          <div className="testimonial flex px-2 gap-4 flex-wrap justify-between">
+            <div className="max-w-xl py-4">
+              <h1 className="title font-bold text-para md:text-sub-title text-black-dark">
+                Peter Nfon
+              </h1>
+              <p className="text-sm">Founder, Sustainable Actions Afrika</p>
+
+              <div className="space-y-small mt-4">
+                <p className="font-normal text-sub-para md:text-para text-black-mid">
+                  Sustainable Actions Afrika is a non-profit organization based
+                  in Cameroon that works to promote sustainable development and
+                  environmental conservation in Africa.
+                </p>
+
+                <p className="font-normal text-sub-para md:text-para text-black-mid">
+                  We developed their website under the Code for Charity program.
+                  This is the video of Mr. Peter Nfon, the founder and CEO of
+                  the organization, sharing his experience with the team.
+                </p>
+
+                <p className="font-normal text-sub-para md:text-para text-black-mid">
+                  Visit the website: {" "}
+                  <a
+                    href="https://sustainableactionsafrika.org/"
+                    className="text-blue-blue underline"
+                    target="_blank"
+                    title="Website of Sustainable Actions Afrika"
+                  >
+                    https://sustainableactionsafrika.org/
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div id="video" className="videoWrapper">
+              <iframe
+                width="600"
+                height="315"
+                src="https://www.youtube.com/embed/Dry5hBqGH9o?si=hDgPJkqNK-8tbK_h"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full h-full md:w-[625px] md:h-[352px]"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 

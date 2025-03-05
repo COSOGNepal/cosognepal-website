@@ -16,6 +16,8 @@ export type Tmember = {
   post:
     | "President"
     | "Vice President"
+    | "Chairperson"
+    | "Advisor"
     | "Secretary"
     | "Treasurer"
     | "IT Head"

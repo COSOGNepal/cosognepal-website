@@ -55,11 +55,22 @@ export default async function AboutPage() {
             />
           </div>
         </div>
+
         <div className="board_members space-y-block " id="team">
-          <SectionTitle title="Our team" />
+          <SectionTitle title="Advisory Board" />
           <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
             {members.map((member, index) => {
-              if (member.post != "Community Leader")
+              if (member.post === "Chairperson" || member.post === "Advisor")
+                return <Member key={index + member.name} data={member} />;
+            })}
+          </div>
+        </div>
+
+        <div className="board_members space-y-block " id="members">
+          <SectionTitle title="Our team members" />
+          <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
+            {members.map((member, index) => {
+              if (member.post != "Chairperson" && member.post != "Advisor")
                 return <Member key={index + member.name} data={member} />;
             })}
           </div>

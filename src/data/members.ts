@@ -30,7 +30,7 @@ const members = [
     insta_link: "https://www.instagram.com/vandari_7/",
     linkedin_link: "https://www.linkedin.com/in/bibekbha/",
     image: BibekBhandari,
-    post: "Director",
+    post: "Chairperson",
   },
   {
     name: "Sushil Bhattarai",
