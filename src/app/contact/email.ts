@@ -1,16 +1,6 @@
 "use server";
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.zoho.com",
-  port: 465,
-  secure: true, // use SSL
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
 const getHTML = (content: string) => `
 <!DOCTYPE html>
 <html>
@@ -44,7 +34,7 @@ const senderHTML = `
   <p>Thank you for contacting us. We will look your message and get back to you soon.</p>
 
   <h3>Follow us for updates:</h3>
-  <p>Please find us on all major social media platforms at @cosognepal. We regularly post updates on our media platforms.</p>
+  <p>Please find us on all major social media platforms at @cosognepal. We regularly post updates on our social media platforms.</p>
         
   <div class="footer">
     <p>If you have any questions or want to talk directly to our team member, feel free to reach out to us at cosognepal@gmail.com</p>
@@ -91,6 +81,16 @@ export async function sendWelcomeEmail(
   phoneNumber: string,
   description: string
 ) {
+  const transporter = nodemailer.createTransport({
+    host: "smtp.zoho.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
+
   const senderOptions = {
     from: `"${process.env.EMAIL_SENDER}" <${process.env.EMAIL_FROM}>`,
     to: email,
@@ -102,25 +102,26 @@ export async function sendWelcomeEmail(
   const receiverOptions = {
     from: `"${process.env.EMAIL_SENDER}" <${process.env.EMAIL_FROM}>`,
     replyTo: email,
-    to : process.env.EMAIL_SENDER,
-    cc: process.env.EMAIL_DEFAULT_RECEIVER, 
+    to: process.env.EMAIL_SENDER,
+    cc: process.env.EMAIL_DEFAULT_RECEIVER,
     subject: "New message from website.",
     html: getHTML(receiverHTML(email, phoneNumber, description)),
   };
 
-  transporter.sendMail(
-    senderOptions,
-    (error: Error | null, info: nodemailer.SentMessageInfo) => {
-      if (error) console.log(error);
-      else console.log(info);
-    }
-  );
+  const senderInfo = await transporter.sendMail(senderOptions);
+  const receiverInfo = await transporter.sendMail(receiverOptions);
 
-  transporter.sendMail(
-    receiverOptions,
-    (error: Error | null, info: nodemailer.SentMessageInfo) => {
-      if (error) console.log(error);
-      else console.log(info);
-    }
-  );
+  if (receiverInfo.messageId && senderInfo.messageId) {
+    return {
+      statusCode: 200,
+      body: "Email sent successfully",
+      senderInfo,
+      receiverInfo,
+    };
+  }
+
+  return {
+    statusCode: 400,
+    body: "Something went wrong!",
+  };
 }
