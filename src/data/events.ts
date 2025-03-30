@@ -209,6 +209,7 @@ const events = [
     ],
     date: "4th May 2024",
     images: [photo12_1, photo12_2, photo12_3],
+    link: '/events/techafterten'
   },
   {
     id: "13",

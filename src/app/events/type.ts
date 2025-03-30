@@ -5,4 +5,5 @@ export type Tevent = {
   date: string;
   images: StaticImageData[];
   descriptions: string[];
+  link?: string;
 };

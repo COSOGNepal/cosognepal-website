@@ -4,6 +4,7 @@ import type { Tevent } from "../type";
 import React, { useEffect, useRef } from "react";
 import imgViewer from "awesome-image-viewer";
 import Image from "next/image";
+import Link from "next/link";
 
 type Tparam = {
   data: Tevent;
@@ -21,7 +22,7 @@ export default function Event({
   states,
   activeBarHeightPerEvent,
 }: Tparam) {
-  const { title, images, date, descriptions } = data;
+  const { title, images, date, descriptions, link } = data;
   const main_container = useRef<HTMLDivElement | null>(null);
 
   const visibleActions = () => {
@@ -129,6 +130,20 @@ export default function Event({
             return <p key={index}> {description} </p>;
           })}
         </div>
+
+          {
+          link && (
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary text-para font-normal mt-standard hover:underline"
+            >
+              Read more
+            </Link>
+          )
+          }
+
       </div>
     </div>
   );
