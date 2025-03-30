@@ -239,6 +239,12 @@ const Page = () => {
                 "While the event is targeted at recent SEE graduates, those with an interest in computer science education are welcome, subject to the event's capacity.",
               value: "item-7",
             },
+            {
+              question: "Where can I access the recording?",
+              answer:
+                "The recording is available on our YouTube channel. You can visit www.youtube.com/@cosognepal or search Coding for Social Good Nepal to access the channel.",
+              value: "item-8",
+            },
           ]}
         />
       </section>
