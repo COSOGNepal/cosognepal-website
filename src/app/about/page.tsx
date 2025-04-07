@@ -61,7 +61,7 @@ export default async function AboutPage() {
           <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
             {members.map((member, index) => {
               if (
-                member.post === "Chairperson" ||
+                member.post === "Chairman" ||
                 member.post === "President"
               ) {
                 const post = "Founder/" + member.post;
@@ -81,7 +81,7 @@ export default async function AboutPage() {
           <SectionTitle title="Our team members" />
           <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
             {members.map((member, index) => {
-              if (member.post != "Chairperson")
+              if (member.post != "Chairman")
                 return <Member key={index + member.name} data={member} />;
             })}
           </div>
