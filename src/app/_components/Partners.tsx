@@ -10,16 +10,16 @@ import aws_cloud_club from "@/assets/images/Partners/aws_cloud_club.png";
 import code_for_change from "@/assets/images/Partners/code_for_change.png";
 import itech_karnali from "@/assets/images/Partners/itech_karnali.png";
 import sagarmatha_techfest from "@/assets/images/Partners/sagarmatha_techfest.png";
-import hackademedia from "@/assets/images/Partners/hackademedia.png";
 import sagarmatha_hacktoberfest from "@/assets/images/Partners/sagarmatha_hacktoberfest.png";
+import technify from "@/assets/images/Partners/technify.png";
 
 const partnersData = [
   { name: "AWS Cloud Club", image: aws_cloud_club },
   { name: "Code for Change", image: code_for_change },
   { name: "iTech Karnali", image: itech_karnali },
   { name: "Sagarmatha Techfest", image: sagarmatha_techfest },
-  { name: "Hackademedia", image: hackademedia },
   { name: "Sagarmatha Hacktoberfest", image: sagarmatha_hacktoberfest },
+  { name: "Technify Club @Duke University", image: technify },
 ];
 
 // const slidesPerView = Math.min(innerWidth - (partenersData.length * 20), 1400 - 20 * partenersData.length) / 192
@@ -27,7 +27,7 @@ const partnersData = [
 const Partners = () => {
   return (
     <main className="bg-gray-bg p-block space-y-block px-standard md:px-block brk-1400:px-0">
-      <SectionTitle title="we've partnered with" />
+      <SectionTitle title="we've worked with" />
       <section>
         <div className="flex space-x-standard justify-center max-w-[1400px] mx-auto overflow-hidden">
           {partnersData.map((partner, index) => (
