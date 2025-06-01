@@ -45,7 +45,7 @@ export default async function CodeForCharityPage() {
           />
         </div>
 
-        <div className="space-y-8">
+        <div className="flex-col space-y-12">
           <h2 className="title font-bold text-para md:text-title text-black-dark">
             Testimonials
           </h2>
@@ -70,7 +70,7 @@ export default async function CodeForCharityPage() {
                 </p>
 
                 <p className="font-normal text-sub-para md:text-para text-black-mid">
-                  Visit the website: {" "}
+                  Visit the website:{" "}
                   <a
                     href="https://sustainableactionsafrika.org/"
                     className="text-blue-blue underline"
@@ -88,6 +88,59 @@ export default async function CodeForCharityPage() {
                 height="315"
                 src="https://www.youtube.com/embed/Dry5hBqGH9o?si=hDgPJkqNK-8tbK_h"
                 title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full h-full md:w-[625px] md:h-[352px]"
+              ></iframe>
+            </div>
+          </div>
+
+          <div className="testimonial flex px-2 gap-4 flex-wrap justify-between flex-row-reverse">
+            <div className="max-w-xl py-4">
+              <h1 className="title font-bold text-para md:text-sub-title text-black-dark">
+                Ghanashyam Bishwakarma
+              </h1>
+              <p className="text-sm">
+                President, National Adolescent Boys&apos; Network Nepal
+              </p>
+
+              <div className="space-y-small mt-4">
+                <p className="font-normal text-sub-para md:text-para text-black-mid">
+                  NABN Nepal is a network founded with the primary objective of
+                  ensuring the comprehensive rights of children and adolescents,
+                  advocating for gender equality, ending gender-based violence,
+                  and empowering the active participation of adolescents in
+                  these efforts.
+                </p>
+
+                <p className="font-normal text-sub-para md:text-para text-black-mid">
+                  Our team, in collaboration with Technify Club of Duke
+                  University helped them build their online presence. This is
+                  the video of Mr. Ghanashyam Bishwakarma, the president of the
+                  organization, sharing his experience with the team.
+                </p>
+
+                <p className="font-normal text-sub-para md:text-para text-black-mid">
+                  Visit the website:{" "}
+                  <a
+                    href="https://nabnnepal.org/"
+                    className="text-blue-blue underline"
+                    target="_blank"
+                    title="Website of NABN Nepal"
+                  >
+                    https://nabnnepal.org/
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div id="video" className="videoWrapper">
+              <iframe
+                width="600"
+                height="315"
+                src="https://www.youtube.com/embed/qJdMG6zLY3U?si=kbDQ5XR3i_82Mv1U"
+                title="Testimonial from the President of the National Adolescent Boys' Network Nepal"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
