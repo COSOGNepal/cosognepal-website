@@ -37,7 +37,7 @@ const GoalsList = [
 const Goals = () => {
     return (
         <main className="px-standard brk-1400:px-0 space-y-block max-w-[1400px] mx-auto">
-            <SectionTitle title="goals" />
+            <SectionTitle title="Our goals" />
             <section className="grid grid-cols-1 lg:grid-cols-2 w-full gap-small">
                 {GoalsList.map((goal) => (
                     <div className="text-para bg-gray-bg p-standard rounded-[5px]" key={goal.id}>

@@ -125,10 +125,11 @@ const Herosection = () => {
                   </h2>
                 </div>
                 <p className="max-w-[1000px] text-left text-faded text-para mt-standard leading-tight">
-                  CoSoG Nepal is a non-for-profit organization working to promote
-                  Computer Science Education and Initiate CS Clubs in
-                  Secondary/High Schools in Nepal and facilitating charitable
-                  coding initiatives to aid in Nepal&apos;s digitalization.
+                  Coding for Social Good Nepal - also known as Cosog Nepal - is a non-for-profit organization
+                  working to promote Computer Science Education and initiate
+                  Computer Science Clubs in Secondary/High Schools in Nepal and
+                  provide pro-bono services with charitable coding initiatives
+                  to aid in Nepal&apos;s digitalization.
                 </p>
               </div>
               <a

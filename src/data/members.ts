@@ -21,7 +21,7 @@ const members = [
     insta_link: "https://www.instagram.com/bhandareebivek/",
     linkedin_link: "https://www.linkedin.com/in/bibekbha/",
     image: BibekBhandari,
-    post: "Chairman",
+    post: "Executive Chairman",
   },
   {
     name: "Aashish Panthi",
