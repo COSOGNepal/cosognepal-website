@@ -12,7 +12,7 @@ We welcome all kinds of contributions—code, documentation, bug reports, featur
    ```bash
    git clone https://github.com/your-username/cosognepal-website.git
    
-   cd project-name
+   cd cosognepal-website
    ```
 3. Install dependencies
    ```bash
